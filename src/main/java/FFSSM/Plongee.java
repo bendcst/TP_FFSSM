@@ -1,4 +1,4 @@
-/**
+/*
  * @(#) Plongee.java
  */
 package FFSSM;
@@ -47,7 +47,7 @@ public class Plongee {
 	 */
 	public boolean estConforme() {
             for (int i = 0 ; i < this.lesParticipants.size(); i++)
-                if (!(this.lesParticipants.get(i).estValide(date))){
+                if (!this.lesParticipants.get(i).estValide(date)){
                     return false;
                     }
                     

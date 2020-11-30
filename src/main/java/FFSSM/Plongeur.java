@@ -11,8 +11,8 @@ public class Plongeur extends Personne {
         this.niveau = niveau;
     }
         
-     public void ajouteLicence(String numero, LocalDate delivrance){
-         licence.numero = numero;
-         licence.delivrance = delivrance;
+     public void ajouteLicence(String numero, LocalDate delivrance, Club club){
+         Licence lic = new Licence(this, numero, delivrance, niveau, club);
+         this.licence = lic;
      }   
 }
